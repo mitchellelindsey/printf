@@ -8,7 +8,7 @@
 
 int _printf(const char *format, ...)
 {
-	unsigned int j, count = 0;
+	unsigned int j, s_count, count = 0;
 
 	va_list args;
 
@@ -20,10 +20,20 @@ int _printf(const char *format, ...)
 		{
 			_putchar(format[j]);
 		}
-		if (format[j] == '%' && format[j + 1] == 'c')
+		else if (format[j + 1] == 'c')
 		{
 			_putchar(va_arg(args, int));
 			j++;
+		}
+		else if (format[j + 1] == 's')
+		{
+			s_count = putss(va_arg(args, char *));
+			j++;
+			count += (s_count - 1);
+		}
+		else if (format[j + 1] == '%')
+		{
+			_putchar('%');
 		}
 
 		count += 1;
