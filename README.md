@@ -4,6 +4,7 @@ victor iyama
 group project
 =======
 
+<<<<<<< HEAD
 0x11. C - printf team project
 
 Group Project:                                                                                                                                      
@@ -61,3 +62,6 @@ Handle the following custom conversion specifier:
 15. All the above options work well together.
 
 >>>>>>> 3c49f26a317524c6a73f1e2a686cd9ede156f5e8
+=======
+Group Project
+>>>>>>> 8d69017caee06b727afcbfee0b90b6e1a6a13fb7
